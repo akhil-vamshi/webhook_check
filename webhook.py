@@ -3,6 +3,9 @@ from flask import Flask, request, Response
 app = Flask(__name__)
 
 
+x = 5
+
+
 @app.route("/my_webhook", methods=["POST"])
 def return_response():
     print(request.json)
